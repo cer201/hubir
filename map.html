@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>iFrame</title>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        // add bicycle layer, set as default
+        // add user destination
+        // grab user's current location
+
+        // initialize map
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: { lat: 34.052235, lng: -118.243683 }
+            });
+
+            // bicycle layer
+            var bikeLayer = new google.maps.BicyclingLayer();
+            bikeLayer.setMap(map);
+
+            var currentLocation;
+            var userDestination;
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzUN05hGUxVMlgKS8clietyy5rubji3m8&callback=initMap">
+    </script>
+</body>
+
+</html>
+
+<style>
+    /* set the map height explicitly to define the size of the div */
+    #map {
+        height: 500px;
+        width: 700px;
+    }
+</style>
