@@ -1,12 +1,11 @@
 var map;
 var infoWindow;
-var geolocation;
-var places;
 
-function displayMap(){
+
+function initMap(){
     map = new google.maps.Map(document.getElementById("map"),{
  
-        center : {lat:34.0394961, lng: -118.491399},
+        center : {lat:34.015476, lng: -118.493180},
         zoom : 15
      
     });
