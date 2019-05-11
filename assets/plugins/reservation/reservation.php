@@ -1,5 +1,6 @@
- <?php
+<?php
 require_once 'config.php';
+
 // Defind variables
 $json =		array();
 $email =	isset( $_POST['reservation__form__email'] ) ? $_POST['reservation__form__email'] : '';
