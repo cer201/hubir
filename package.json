@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app/index.html",
+	"dependencies":{
+		"firebase":"^6.0.0"
+	},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,6 +36,7 @@
     "gulp-wait": "0.0.2",
     "postcss-flexbugs-fixes": "^4.1.0",
     "run-sequence": "^2.2.0",
-    "stream-combiner2": "^1.1.1"
+    "stream-combiner2": "^1.1.1",
+	"firebase-server":"^0.0.1"  
   }
 }

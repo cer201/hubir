@@ -4,6 +4,22 @@
 
 "use strict";
 
+
+var config = {
+    apiKey: "AIzaSyDwmIb1yuSg3q-YtsmvxXh0IPkfkvZasig",
+    authDomain: "datacollect-4f475.firebaseapp.com",
+    databaseURL: "https://datacollect-4f475.firebaseio.com",
+    projectId: "datacollect-4f475",
+    storageBucket: "datacollect-4f475.appspot.com",
+    messagingSenderId: "370113740376",
+    appId: "1:370113740376:web:ac5ed59dba53b6ca"
+  };
+
+
+  // Initialize Firebase
+  firebase.initializeApp(config);
+  var database = firebase.database()
+
 var reservation = (function() {
 
 	// Variables
@@ -11,11 +27,11 @@ var reservation = (function() {
 	var formName = 		$('#reservation__form__name');
 	var formPhone = 	$('#reservation__form__phone');
 	var formEmail = 	$('#reservation__form__email');
-	var formPeople = 	$('#reservation__form__people');
+//	var formPeople = 	$('#reservation__form__people');
 	var formDate = 		$('#reservation__form__date');
 	var formTime = 		$('#reservation__form__time');
 	var formSubmit = 	form.find('[type="submit"]');
-	var formActionUrl = 'assets/plugins/reservation/reservation.php';
+//	var formActionUrl = 'assets/plugins/reservation/reservation.php';
 
 	// Methods
 	function getCurrentDate() {
@@ -38,6 +54,7 @@ var reservation = (function() {
 		formDate.val(today);
 	}
 	function submitForm($this) {
+		
 
 		$.ajax({
 			url: formActionUrl,
@@ -97,6 +114,13 @@ var reservation = (function() {
 					form[0].reset();
 				}
 			}
+		});
+		database.ref().push({
+		name: formName,
+		phoneNumber: formPhone,
+		email: formEmail,
+		reserveDate : formDate,
+		reserveTime : formTime
 		});
 
 	}
