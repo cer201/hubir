@@ -81,7 +81,13 @@ formTime = $("#reservation__form__time").val().trim();
 		reserveDate : formDate,
 		reserveTime : formTime
 		});
-		
+	
+$("#reservation__form__name").val("");
+$("#reservation__form__phone").val("");
+$("#reservation__form__email").val("");
+//dropLocation = $("#reservation__form__people").val();
+$("#reservation__form__date").val();
+$("#reservation__form__time").val();
 		
 	})
 	
