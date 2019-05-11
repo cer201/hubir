@@ -4,10 +4,10 @@
 // ==========
 
 // Email address notifications will be sent to
-$to_email = 'admin@domain.com';
+$to_email = 'stagingwebuild@gmail.com';
 
 // Email subject
-$mail_subject = 'New reservation via Touche';
+$mail_subject = 'New bird reservation';
 
 // Email content can be modified in sendmail.php
 
