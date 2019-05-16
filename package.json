@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app/home.html",
-	"dependencies":{
-		"firebase":"^6.0.0"
-	},
+  "dependencies": {
+    "apollo-server": "^2.5.0",
+    "firebase": "^6.0.0",
+    "graphql": "^14.3.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -37,6 +39,6 @@
     "postcss-flexbugs-fixes": "^4.1.0",
     "run-sequence": "^2.2.0",
     "stream-combiner2": "^1.1.1",
-	"firebase-server":"^0.0.1"  
+    "firebase-server": "^0.0.1"
   }
 }
