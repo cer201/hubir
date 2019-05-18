@@ -18,7 +18,7 @@ var config = {
 
   // Initialize Firebase
   firebase.initializeApp(config);
-  var database = firebase.database()
+  var database = firebase.database();
   var ref = database.ref("user");
  var newUserRef = ref.push();
 
@@ -89,7 +89,7 @@ $("#reservation__form__email").val("");
 $("#reservation__form__date").val();
 $("#reservation__form__time").val();
 		
-	})
+	});
 	
 		
 //	function submitForm($this) {

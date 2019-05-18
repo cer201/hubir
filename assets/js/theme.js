@@ -108,16 +108,16 @@ var Menu = (function() {
 			});
 
 		});
-	};
-	function filterItems(elem) {
+    }
+    function filterItems(elem) {
 		var targetMenu = $menu.filter( elem.attr('href') );
 		var targetCategory = elem.data('filter');
 
 		targetMenu.isotope({
 			filter: targetCategory
 		});
-	};
-	function toggleLinks(elem) {
+    }
+    function toggleLinks(elem) {
 		elem.parent('li').siblings('li').removeClass('active');
 		elem.parent('li').addClass('active');
 	}
@@ -198,9 +198,8 @@ var Gallery = (function() {
 				grid.isotope('layout');
 			});
 		});
-	};
-
-	// Events
+    }
+    // Events
 	// ======
 
 	if ( $gallery.length ) {

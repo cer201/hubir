@@ -6,6 +6,8 @@
   "dependencies": {
     "apollo-server": "^2.5.0",
     "firebase": "^6.0.0",
+    "firebase-cli": "^1.2.0",
+    "firebase-tools": "^6.9.2",
     "graphql": "^14.3.0"
   },
   "scripts": {
@@ -24,7 +26,8 @@
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "del": "^4.1.0",
-    "gulp": "3.9.1",
+    "firebase-server": "^1.0.2",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cache": "^1.0.1",
     "gulp-csscomb": "^3.0.8",
@@ -38,7 +41,6 @@
     "gulp-wait": "0.0.2",
     "postcss-flexbugs-fixes": "^4.1.0",
     "run-sequence": "^2.2.0",
-    "stream-combiner2": "^1.1.1",
-    "firebase-server": "^0.0.1"
+    "stream-combiner2": "^1.1.1"
   }
 }
