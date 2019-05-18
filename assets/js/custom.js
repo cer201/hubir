@@ -13,17 +13,6 @@ var reserveDate;
 var reserveTime;
 
 
-var firebaseConfig = {
-    apiKey: "AIzaSyDwmIb1yuSg3q-YtsmvxXh0IPkfkvZasig",
-    authDomain: "datacollect-4f475.firebaseapp.com",
-    databaseURL: "https://datacollect-4f475.firebaseio.com",
-    projectId: "datacollect-4f475",
-    storageBucket: "datacollect-4f475.appspot.com",
-    messagingSenderId: "370113740376",
-    appId: "1:370113740376:web:ac5ed59dba53b6ca"
-  };
-
-
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   var database = firebase.database();
